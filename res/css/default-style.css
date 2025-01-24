@@ -3,16 +3,64 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     height: 1000px;
+    width: 80%;
+    justify-self: center;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 1fr);
+    background-color: gray;
 }
 
+/* HEADER SECTION */
 header{
     grid-area: 1 / 1 / span 3 / span 6;
-    justify-content: center;
+    /* justify-content: center;
     justify-items: center;
-    align-content: center;
-    background-color: dodgerblue;
+    align-content: center; */
+    background-image: url(/res/img/pinkSunset.JPEG);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+}
+
+#title-block {
+    width: 20%;
+    height: 90%;
+    position: relative;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.title {
+    color: seashell;
+    margin-left: 55%;
+    font-size: 4rem;
+}
+
+nav {
+    position: relative;
+    display: inline;
+    width: 25%;
+    height:fit-content;
+    left: 45%;
+    top: 65%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    color: seashell;
+    font-weight: 600;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer{
