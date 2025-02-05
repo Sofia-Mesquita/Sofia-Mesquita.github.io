@@ -1,4 +1,6 @@
-h1 {
+/* This is the default styling that is used on all pages of the site */
+
+h1, h2, h3 {
     font-weight: 300;
     
 }
@@ -20,8 +22,9 @@ body {
     height: fit-content;
     width: 65%;
     justify-self: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 0;
+    margin-bottom: 2px;
     padding: 0 2.5%;
     
 }
@@ -73,6 +76,11 @@ nav ul li {
     font-weight: 400;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: seashell;
+}
+
 nav ul li:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -83,68 +91,60 @@ nav ul li:hover {
 main{
     margin-bottom: 100px;
 }
-main h1 {
+main h2 {
     margin-bottom: 0;
     border-bottom: 1px solid seashell;
     text-transform: uppercase;
 }
 
-/*TOP LEFT CONTENT */
-
-#intro{
-    margin-top: 50px;
-}
-
-
-#intro p {
-    font-size: 1.5rem;
-}
-
-.split{
-    display: flex;
-}
-
-.left-box {
-    display: grid;
-    justify-items: center;
-    padding: 2.5% 5%;
-    width: 50%;
-}
-
-.left-box h1 {
-    width: 100%;
-}
-
-.left-box img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-
-/* TOP RIGHT CONTENT */
-.right-box {
-    width: 50%;
-    padding: 2.5% 5%;
-}
-
-
-/* EXPERIENCE SECTION */
-
-#experience {
-    width: 100%;
-    display: block;
-
-}
+/* FOOTER */
 
 footer{
-    /* grid-area: 11 / 1 / span 6 / span 6; */
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     justify-items: center;
     align-content: center;
     position: relative;
+}
 
+footer #footer-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #contact {
+    padding: 0 2.5%;
+    
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    font-size: .75rem;
+
+}
+
+footer li a {
+    text-decoration: none;
+    color: seashell;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+
+footer #media-links {
+    justify-self: right;
+    padding: 0 5%;
+}
+
+footer #copyright {
+    font-size: 0.5em;
 }
 

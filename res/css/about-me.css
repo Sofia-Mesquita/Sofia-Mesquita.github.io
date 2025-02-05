@@ -1,0 +1,82 @@
+/* This is the styling for content specific to the ABOUT ME page */
+
+
+/*TOP LEFT CONTENT */
+
+#intro{
+  margin-top: 50px;
+}
+
+
+#intro p {
+  font-size: calc(1vw + 1vh);
+}
+
+.split{
+  display: flex;
+}
+
+.left-box {
+  display: grid;
+  justify-items: center;
+  padding: 2.5% 5%;
+  width: 50%;
+}
+
+.left-box h1 {
+  width: 100%;
+}
+
+.left-box img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+/* TOP RIGHT CONTENT */
+.right-box {
+  width: 50%;
+  padding: 2.5% 5%;
+  
+}
+
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  width: 100%;
+  display: block;
+
+}
+
+#experience h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+#experience p {
+  font-size: 1.25em;
+}
+
+/* EDUCATION SECTION */
+#education {
+  width: 100%;
+  display: block;
+
+}
+
+#education h3{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#education p, li {
+  font-size: 1.25em;
+}
+
+#education ul {
+  list-style-type: circle;
+}
