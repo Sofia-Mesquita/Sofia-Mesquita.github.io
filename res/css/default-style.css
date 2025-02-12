@@ -140,10 +140,25 @@ footer li a:hover {
 
 
 footer #media-links {
+    display: flex;
+    width: 20%;
     justify-self: right;
-    padding: 0 5%;
+    
 }
 
+#media-links a {
+    aspect-ratio: 1/1;
+    width: 50px;
+    height: auto;
+    padding: 2%;
+}
+
+#media-links a img {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: auto;
+
+}
 footer #copyright {
     font-size: 0.5em;
 }
